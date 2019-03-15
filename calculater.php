@@ -1,8 +1,7 @@
 <?php
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
   <head>
     <title>Calculator</title>
 	
@@ -13,25 +12,20 @@
 // basic calculator program
 function showForm() {
 ?>
-	<script language="Javascript">
-	<!--
-	alert ("Hello! Wel-Come to My PHP calculater")
-	//-->
-	</script>
-	<img src="images/cal.jpg" width="550" height="350" align="center"></img>
-   <font face="verdana" color="green">All field are required, however, if you forget any, we will put a random number in for you.</font>  <br />
+    <!-- <img src="images/cal.jpg" width="550" height="350" align="center"></img>--> 
+      <p style="text-align: center; color:red;">All field are required, however, if you forget any, we will put a random number in for you.</font>  <br />
 	<hr>
-	<table border="0">
+	<table border="0" style="margin:0 auto;">
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <tr>
             <td><font face="verdana" color="green">Number:</font></td>
-            <td><input type="text" maxlength="3" name="number" size="4"  /></td>
+            <td><input type="number" maxlength="3" name="number" size="4"  /></td>
         </tr>
         
         <span id="square">
         <tr>
             <td><font face="verdana" color="green">Another number:</font></td>
-            <td><input type="text" maxlength="4" name="number2" size="4" /></td>
+            <td><input type="number" maxlength="4" name="number2" size="4" /></td>
         </tr>
         </span>
         
